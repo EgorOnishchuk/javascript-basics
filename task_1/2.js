@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /*
 Необходимо создать переменную name, записать в эту переменную свое имя.
@@ -7,6 +7,6 @@
 Вывести значение переменной admin в консоль.
 */
 
-const name_ = 'Егор';
-const admin = name_;
+const userName = 'Егор';
+const admin = userName;
 console.log(admin);

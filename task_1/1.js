@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /*
 Необходимо пользователя попросить ввести температуру в градусах Цельсия,
@@ -14,13 +14,20 @@
 */
 
 while (true) {
-	const celsiusDegrees = +prompt('Введите температуру в градусах Цельсия. ' +
-		                           'Если Вы ничего не введёте, в качестве ' +
-								   'ввода будет принят 0.');
-	if (!isNaN(celsiusDegrees)) {
-		alert(`Цельсий: ${celsiusDegrees.toFixed(2)}, Фаренгейт: ${(celsiusDegrees * (9 / 5) + 32).toFixed(2)}.`);
-    	break;
-  	} else {
-    	alert('Вы ввели не число.');
+    const celsiusDegrees = +prompt(
+        'Введите температуру в градусах Цельсия. ' +
+            'Если Вы ничего не введёте, в качестве ' +
+            'ввода будет принят 0.'
+    );
+    if (!isNaN(celsiusDegrees)) {
+        alert(
+            `Цельсий: ${celsiusDegrees.toFixed(2)}, Фаренгейт: ${(
+                celsiusDegrees * (9 / 5) +
+                32
+            ).toFixed(2)}.`
+        );
+        break;
+    } else {
+        alert('Вы ввели не число.');
     }
 }
